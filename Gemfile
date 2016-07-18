@@ -9,7 +9,8 @@ group :development do
 end
 
 gem 'rubyzip', ENV['RUBYZIP_VERSION'] if ENV['RUBYZIP_VERSION']
-gem 'rake', ENV['RAKE_VERSION'], :require => nil if ENV['RAKE_VERSION']
+#gem 'rake', ENV['RAKE_VERSION'], :require => nil if ENV['RAKE_VERSION']
+gem 'rake', :git => 'git@github.com:tarasSE/rake.git'
 
 group :development, :test do
   gem 'rdoc', ['>= 3.10', '< 4.3'], :require => nil
